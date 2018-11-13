@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicTableViewCell" rowHeight="328" id="KGk-i7-Jjw" customClass="TopicTableViewCell" customModule="TV_CV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="328"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="327.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="71v-JO-BeA">
+                        <rect key="frame" x="8" y="4" width="342" height="340"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookAds" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-Vv-fma">
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="057-I0-F5f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Nov, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-mG-Rkx">
+                                <rect key="frame" x="0.0" y="278.5" width="342" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trump-Russia probe 'under threat' after Sessions fired" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0V-cR-qo4">
+                                <rect key="frame" x="0.0" y="228" width="342" height="46.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7EP-Vv-fma" firstAttribute="top" secondItem="71v-JO-BeA" secondAttribute="top" id="BBn-Sm-J3E"/>
+                            <constraint firstItem="n0V-cR-qo4" firstAttribute="leading" secondItem="71v-JO-BeA" secondAttribute="leading" id="GLb-G6-Tam"/>
+                            <constraint firstItem="7EP-Vv-fma" firstAttribute="leading" secondItem="71v-JO-BeA" secondAttribute="leading" id="LpY-J2-kq1"/>
+                            <constraint firstAttribute="trailing" secondItem="7EP-Vv-fma" secondAttribute="trailing" id="TtN-Lu-AuP"/>
+                            <constraint firstItem="aLa-mG-Rkx" firstAttribute="leading" secondItem="71v-JO-BeA" secondAttribute="leading" id="V1S-8f-qav"/>
+                            <constraint firstAttribute="trailing" secondItem="n0V-cR-qo4" secondAttribute="trailing" id="bCR-0n-pCB"/>
+                            <constraint firstItem="n0V-cR-qo4" firstAttribute="top" secondItem="7EP-Vv-fma" secondAttribute="bottom" constant="8" id="bJt-sI-cfO"/>
+                            <constraint firstItem="aLa-mG-Rkx" firstAttribute="top" secondItem="n0V-cR-qo4" secondAttribute="bottom" constant="4" id="h9T-bh-43b"/>
+                            <constraint firstAttribute="trailing" secondItem="aLa-mG-Rkx" secondAttribute="trailing" id="qAb-4s-2wI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="71v-JO-BeA" secondAttribute="trailing" constant="8" id="gS1-zT-ofy"/>
+                    <constraint firstItem="71v-JO-BeA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ksm-xq-nNk"/>
+                    <constraint firstAttribute="bottom" secondItem="71v-JO-BeA" secondAttribute="bottom" constant="8" id="ua3-KK-t3r"/>
+                    <constraint firstItem="71v-JO-BeA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="yXE-0H-xPW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivTopic" destination="7EP-Vv-fma" id="f6G-aq-dKB"/>
+                <outlet property="lblReleasedDate" destination="aLa-mG-Rkx" id="RO2-Ed-Mcg"/>
+                <outlet property="lblTitle" destination="n0V-cR-qo4" id="tRU-F2-X7v"/>
+            </connections>
+            <point key="canvasLocation" x="-168" y="118.74062968515743"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookAds" width="263" height="192"/>
+    </resources>
+</document>
